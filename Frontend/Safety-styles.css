@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.heading h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.heading button,
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.heading button:hover {
+  background-color: #0056b3;
+}
+
+.section {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.job-code-form {
+  display: flex;
+  justify-content: space-between;
+}
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.table-container {
+  display: flex;
+  gap: 5px;
+}
+
+.table-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 48%;
+  overflow-y: auto;
+}
+
+.table-section h2,
+.table-section h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.month-year {
+  display: flex;
+  width: 50px;
+  padding: 5px;
+  gap: 5px;
+}
+
+#month,
+#year {
+  padding: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    flex-direction: column;
+  }
+  .table-section {
+    width: 100%;
+  }
+  .form-item input {
+    width: 100%;
+  }
+}
